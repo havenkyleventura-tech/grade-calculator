@@ -1,0 +1,72 @@
+<!-- http://localhost:5173/  try this if not running-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grade Calculator</title>
+
+    <script type="module"
+        src="ionic/ionic.esm.js">
+    </script>
+
+    <script nomodule
+        src="ionic/ionic.js">
+    </script>
+
+    <link rel="stylesheet"
+        href="ionic.bundle.css">
+</head>
+
+<body>
+
+    <ion-app>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>Grade Calculator</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">
+
+            <ion-item>
+                <ion-label>Prelim Grade</ion-label>
+                <input id="prelim" type="number" inputmode="decimal" placeholder="Enter grade">
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Midterm Grade</ion-label>
+                <input id="midterm" type="number" inputmode="decimal" placeholder="Enter grade">
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Final Grade</ion-label>
+                <input id="final" type="number" inputmode="decimal" placeholder="Enter grade">
+            </ion-item>
+
+            <br>
+
+            <ion-button expand="block" id="calculateButton">
+                Calculate Grade
+            </ion-button>
+
+            <br>
+
+            <h2 id="result">Average: 0</h2>
+
+            <p id="remarks">Remarks: None</p>
+
+        </ion-content>
+
+    </ion-app>
+
+    <script src="src/main.js"></script>
+
+</body>
+
+</html>
